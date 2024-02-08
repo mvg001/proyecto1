@@ -1,7 +1,9 @@
 <div id="formulario">
         <div>
-                <input type="text" name="nombre-tarea" id="nombre-tarea" placeholder="Nombre">
-                <input type="number" name="duraccion-tarea" id="duraccion-tarea" placeholder="Duracción">
-                <input type="button" value="+">
+                <input type="text" name="nombre-tarea" id="nombre-tarea" placeholder="Nombre" [(ngModel)]="tarea.
+                nombre">
+                <input type="number" name="duraccion-tarea" id="duraccion-tarea" placeholder="Duración"
+                        [(ngModel)]="tarea.duracion">
+                <input type="button" value="+" (click)="addTarea()">
         </div>
 </div>
